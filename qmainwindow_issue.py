@@ -6,7 +6,7 @@ import sys
 class mainChild(QWidget):
 	def __init__(self, parent=None):
 		super(mainChild, self).__init__(parent)
-		self.setWindowTitle("main window that's right")
+		self.setWindowTitle("child window that's right")
 		self.setGeometry(00, 100, 400, 400)
 		self.button = QPushButton("I Should appear in separate Window!!", self)
 		self.show()
