@@ -17,6 +17,7 @@ class testClass(QWidget):
 	@Slot(str)
 	def receive_args(self, args):
 		print "hello"
+		self.raise_()
 
 
 if __name__ == '__main__':
