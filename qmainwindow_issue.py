@@ -1,9 +1,9 @@
-from PySide.QtGui import QMainWindow, QApplication, QWidget, QPushButton
+from PySide.QtGui import QMainWindow, QApplication, QWidget, QPushButton, QDialog
 from PySide.QtCore import *
 import sys
 
 
-class mainChild(QWidget):
+class mainChild(QDialog):
 	def __init__(self, parent=None):
 		super(mainChild, self).__init__(parent)
 		self.setWindowTitle("child window that's right")
