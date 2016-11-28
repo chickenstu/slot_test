@@ -34,7 +34,7 @@ class PaletteListModel(QAbstractListModel):
 		# If text is being edited, return specific string
 		elif role == Qt.EditRole:
 			return self._colors[index.row()].name()
-		return super(PaletteListModel, self).data(index, role)
+		return None
 
 	def rowCount(self, parent):
 		return len(self._colors)
